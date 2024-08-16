@@ -4,21 +4,20 @@ public class Main {
     private static int max_value = 100;
     private static String FUNCTION_NAME = "Main Function";
 
-    // Exemplo de chamada de metodo estatico
+    // Exemplo de chamada de metodo nao estatico
     public static void main(String[] args) {
         System.out.printf("Hello World");
-        var somatorio = Main.soma(2, 4);
-        int subtracao = Main.subtrair(4, 5);
+        //instanciando objetos do tipo MinhaCalculadora
+        var objetoCalculadora = new MinhaCalculadora();
+        MinhaCalculadora objetoCalculadora2 = new MinhaCalculadora();
+
+        //Acessando metodo dentro dos objetos
+        var somatorio = objetoCalculadora.soma(2, 4);
+        int subtracao = objetoCalculadora2.subtrair(4, 5);
         System.out.printf("O somatorio é: " + somatorio);
         System.out.printf("A subtracao é: "+ subtracao);
     }
 
-    public static int soma(int a, int b) {
-        return a + b;
-    }
 
-    public static int subtrair(int a, int b){
-        return a - b;
-    }
 
 }
