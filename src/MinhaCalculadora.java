@@ -4,7 +4,7 @@ public class MinhaCalculadora {
         return a + b;
     }
 
-    public int subtrair(int a, int b){
+    public int subtrair(int a, int b) {
         return a - b;
     }
 }
