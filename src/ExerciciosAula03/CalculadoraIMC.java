@@ -40,7 +40,6 @@ public class CalculadoraIMC {
             classificacao = "Obesidade Grave";
             grauObesidade = 3;
         }
-
         // Exibe o resultado
         System.out.println("Seu IMC é: " + imcFormatado);
         System.out.println("Classificação: " + classificacao);
