@@ -1,3 +1,5 @@
+package ExerciciosAula03;
+
 import java.util.Scanner;
 
 public class CalculadoraIMC {
